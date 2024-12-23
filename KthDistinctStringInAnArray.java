@@ -2,6 +2,14 @@ import java.util.*;
 
 public class KthDistinctStringInAnArray {
 
+  /**
+   * This function returns kth distinct string in given array of strings.
+   *
+   * @param arr array of strings
+   * @param k   kth distinct string to find
+   * @return kth distinct string
+   */
+  
   public static String kthDistinctString(String[] arr, int k) {
 
     HashMap<String, Integer> map = new HashMap<>();
@@ -14,8 +22,8 @@ public class KthDistinctStringInAnArray {
     for (String s : arr) {
       if (map.get(s) == 1)
         k--;
-        if (k == 0) 
-          return s;
+      if (k == 0)
+        return s;
     }
 
     return "";

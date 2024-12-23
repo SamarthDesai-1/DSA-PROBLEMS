@@ -1,7 +1,6 @@
 public class ReverseStringTwo {
 
-  public static void main(String[] args) {
-    String str = "samarthdesai";
+  public static String reverse(String str) {
     StringBuilder sb = new StringBuilder(str);
     int k = str.length();
 
@@ -15,7 +14,12 @@ public class ReverseStringTwo {
       end--;
     }
 
-    System.out.println(sb);
+    return sb.toString();
   }
-  
+
+  public static void main(String[] args) {
+    String str = "samarthdesai";
+
+    System.out.println("Reverse of " + str + " is : " + reverse(str));
+  }
 }
