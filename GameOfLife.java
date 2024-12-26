@@ -8,14 +8,12 @@ public class GameOfLife {
 
       for (int j = 0; j < col; j++) {
 
-        if (x[i][j] == 0) {
-          
-        }
-        else {
-
-        }
+       
+         
       }
     }
+
+    
   }
 
   public static void main(String[] args) {

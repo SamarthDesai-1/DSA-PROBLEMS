@@ -20,10 +20,8 @@ public class KthSmallestElementInASortedMatrix {
 
     int filler = 0;
     for (int i = 0; i < x.length; i++) {
-
       for (int j = 0; j < x[0].length; j++)
         nums[filler++] = x[i][j];
-
     }
 
     Arrays.sort(nums);
@@ -32,19 +30,15 @@ public class KthSmallestElementInASortedMatrix {
   }
 
   /**
-   * Tests the kthSmallestElement method.
+   * The main method to test the kthSmallestElement method.
    *
-   * Given a matrix and the value of k, this method will find the kth smallest
-   * element in the matrix.
+   * @param args command-line arguments (not used)
    */
 
   public static void main(String[] args) {
-    int[][] matrix = {
-        { 1, 5, 6 }, { 10, 11, 13 }, { 12, 13, 15 }
-    };
+    int[][] matrix = { { 1, 5, 9 }, { 10, 11, 13 }, { 12, 13, 15 } };
     int k = 8;
 
-    System.out.println("NOTE : This is a brute force solution.");
-    System.out.println("Kth smallest element in a mtrix is : " + kthSmallestElement(matrix, k));
+    System.out.println("The " + k + "th smallest element in the matrix is: " + kthSmallestElement(matrix, k));
   }
 }
