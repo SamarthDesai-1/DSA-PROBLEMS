@@ -14,16 +14,21 @@ public class WaveFormTwoDMatrix {
 
     for (int j = 0; j < col; j++) {
 
-      if (j % 2 == 0) 
+      if (j % 2 == 0)
         for (int i = 0; i < row; i++)
           System.out.print(x[i][j] + " ");
-          
-      else 
+
+      else
         for (int i = row - 1; i >= 0; i--)
           System.out.print(x[i][j] + " ");
     }
   }
 
+  /**
+   * Example of a 2D matrix and call the printWaveForm to print its elements in
+   * a wave form.
+   */
+  
   public static void main(String[] args) {
     int[][] nums = {
         { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 }

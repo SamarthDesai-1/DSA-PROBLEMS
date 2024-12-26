@@ -7,7 +7,7 @@ public class FindThePivotInteger {
    * @param n the upper limit of the range (inclusive)
    * @return the pivot integer or -1 if not found
    */
-  
+
   public static int pivotInteger(int n) {
 
     int totalSum = n * (n + 1) / 2;
@@ -23,6 +23,12 @@ public class FindThePivotInteger {
     return -1;
   }
 
+  /**
+   * Prints the pivot integer to the console for a given upper limit of 8
+   * 
+   * @param args the command line arguments
+   */
+  
   public static void main(String[] args) {
     int n = 8;
 

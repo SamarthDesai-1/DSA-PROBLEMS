@@ -111,6 +111,12 @@ public class AvaliableCapturesOfRook {
     return totalCapture;
   }
 
+  /**
+   * Test main function.
+   *
+   * @param args Command line arguments.
+   */
+  
   public static void main(String[] args) {
 
     char[][] x = {

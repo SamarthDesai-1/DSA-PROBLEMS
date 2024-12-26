@@ -9,7 +9,7 @@ public class KthDistinctStringInAnArray {
    * @param k   kth distinct string to find
    * @return kth distinct string
    */
-  
+
   public static String kthDistinctString(String[] arr, int k) {
 
     HashMap<String, Integer> map = new HashMap<>();
@@ -29,6 +29,12 @@ public class KthDistinctStringInAnArray {
     return "";
   }
 
+  /**
+   * Example program to show the usage of kthDistinctString function
+   *
+   * @param args command line arguments
+   */
+  
   public static void main(String[] args) {
     String[] arr = { "aaa", "aa", "a" };
     int k = 1;

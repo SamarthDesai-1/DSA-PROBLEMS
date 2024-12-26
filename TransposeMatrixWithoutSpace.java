@@ -38,6 +38,11 @@ public class TransposeMatrixWithoutSpace {
     }
   }
 
+  /**
+   * Tests the {@link #transposeMatrix(int[][])} method using the sample
+   * matrix provided in the method's docstring.
+   */
+  
   public static void main(String[] args) {
     int[][] nums = {
         { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 }

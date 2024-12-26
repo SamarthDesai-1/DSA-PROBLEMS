@@ -61,6 +61,8 @@ public class RotateMatrixOneEightyDegree {
         }
         System.out.println();
       }
+      
+      System.out.println();
     }
   }
 
@@ -72,9 +74,13 @@ public class RotateMatrixOneEightyDegree {
     int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6, }, { 7, 8, 9 } };
 
     Matrix foo = new Matrix();
+
+    System.out.println("0 degree matrix");
+    foo.print(matrix);
+    
     for (int i = 0; i < matrix.length; i++)
       foo.reverseRow(matrix[i]);
-
+    
     foo.reverseCol(matrix);
 
     System.out.println("180 degree rotated matrix.");

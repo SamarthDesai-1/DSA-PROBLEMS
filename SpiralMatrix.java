@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.ArrayList;
 
 public class SpiralMatrix {
 
@@ -16,13 +16,9 @@ public class SpiralMatrix {
     int col = x[0].length;
 
     int top = 0;
-    int right = col - 1;
     int bottom = row - 1;
     int left = 0;
-
-    top = left = 0;
-    right = col - 1;
-    bottom = row - 1;
+    int right = col - 1;
 
     while (top <= bottom && left <= right) {
 
@@ -56,6 +52,12 @@ public class SpiralMatrix {
     return ans;
   }
 
+  /**
+   * The main function contains a unit test for printSpiralForm.
+   * The unit test checks the case of a 3x3 matrix with increasing values.
+   * The function prints the spiral form of the matrix specified in the test.
+   */
+  
   public static void main(String[] args) {
     int[][] nums = {
         { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }
