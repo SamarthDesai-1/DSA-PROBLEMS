@@ -1,45 +1,64 @@
 public class GameOfLife {
 
+  /**
+   * Simulates one iteration of the Game of Life on a given board.
+   *
+   * The Game of Life is a cellular automaton devised by John Conway. The board
+   * is a grid of cells, where each cell can be either alive (1) or dead (0).
+   * Each cell interacts with its eight neighbors, which are the cells that are
+   * horizontally, vertically, or diagonally adjacent.
+   *
+   * - Any live cell with fewer than two live neighbors dies, as if by
+   * underpopulation.
+   * - Any live cell with two or three live neighbors lives on to the next
+   * generation.
+   * - Any live cell with more than three live neighbors dies, as if by
+   * overpopulation.
+   * - Any dead cell with exactly three live neighbors becomes a live cell, as if
+   * by reproduction.
+   *
+   * @param board the 2D array representing the board, where '1' represents a live
+   *              cell
+   *              and '0' represents a dead cell. The board is updated in place.
+   */
+
   public static void gameOfLife(int[][] board) {
-    if (board == null || board.length == 0)
+    int row = board.length;
+    int col = board[0].length;
+
+    if (board == null || row == 0)
       return;
 
-    int m = board.length;
-    int n = board[0].length;
+    int[][] copyBoard = new int[row][col];
 
-    int[][] copyBoard = new int[m][n];
-
-    for (int i = 0; i < m; i++) {
-      for (int j = 0; j < n; j++) {
+    for (int i = 0; i < row; i++) {
+      for (int j = 0; j < col; j++) {
         copyBoard[i][j] = board[i][j];
       }
     }
 
-    /** Direction array to gey all 8 directions */
     int[] neighbours = { -1, 0, 1 };
 
-    for (int i = 0; i < m; i++) {
-      for (int j = 0; j < n; j++) {
+    for (int i = 0; i < row; i++) {
+      for (int j = 0; j < col; j++) {
 
-        int liveNeighbours = 0;
+        int livingNeighbours = 0;
 
-        /** Check for all neoghbours */
         for (int x : neighbours) {
           for (int y : neighbours) {
-
             if (!(x == 0 && y == 0)) {
               int r = i + x;
               int c = j + y;
 
-              if ((r >= 0 && r < m) && (c >= 0 && c < n) && copyBoard[r][c] == 1)
-                liveNeighbours++;
+              if ((r >= 0 && r < row) && (c >= 0 && c < col) && copyBoard[r][c] == 1)
+                livingNeighbours++;
             }
           }
         }
 
-        if ((copyBoard[i][j] == 1) && (liveNeighbours < 2 || liveNeighbours > 3))
+        if ((board[i][j] == 1) && livingNeighbours < 2 || livingNeighbours > 3)
           board[i][j] = 0;
-        if ((copyBoard[i][j] == 0) && liveNeighbours == 3)
+        if ((board[i][j] == 0) && livingNeighbours == 3)
           board[i][j] = 1;
       }
     }
