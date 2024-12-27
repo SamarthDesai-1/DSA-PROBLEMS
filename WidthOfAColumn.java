@@ -68,7 +68,8 @@ public class WidthOfAColumn {
     int[][] grid = {
         { 1, 23, 456 },
         { 7890, -12, 34 },
-        { 56, 789, -1234 }
+        { 56, 789, -1234 },
+        { -8556, -855, 25855 }
     };
 
     System.out.println(columnWidth(grid));
