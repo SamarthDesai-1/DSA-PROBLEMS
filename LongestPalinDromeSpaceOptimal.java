@@ -1,11 +1,21 @@
 public class LongestPalinDromeSpaceOptimal {
 
+  /**
+   * Given a string, return the length of the longest palindrome that can be made
+   * by rearranging the characters of the string. For example, given the string
+   * "abcccddDD", the longest palindrome is "dccd" and the length is 4.
+   * 
+   * This algorithm runs in O(n) time and uses O(1) space.
+   * 
+   * @param s the string to process
+   * @return the length of the longest palindrome that can be made
+   */
+
   public static int longestPalindrome(String s) {
     int[] frequency = new int[128];
 
     for (int i = 0; i < s.length(); i++)
       frequency[s.charAt(i)]++;
-      
 
     int palindrome = 0;
 
@@ -29,6 +39,15 @@ public class LongestPalinDromeSpaceOptimal {
 
     return palindrome;
   }
+
+  /**
+   * The main method serves as the entry point for the program.
+   * It initializes a sample string and computes the length of the longest
+   * palindrome that can be formed by rearranging the characters of the string.
+   * The result is then printed to the console.
+   * 
+   * @param args command-line arguments (not used)
+   */
 
   public static void main(String[] args) {
     String s = "abcccAccTTTdHHd";

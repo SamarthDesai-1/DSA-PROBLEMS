@@ -1,5 +1,14 @@
 public class IsUnique {
 
+  /**
+   * Determines if a string has all unique characters.
+   *
+   * @param s the input string to be checked for uniqueness.
+   * @return true if the string contains all unique characters, false otherwise.
+   *         If the length of the string exceeds 128, returns false since it
+   *         cannot have all unique characters within the ASCII character set.
+   */
+
   public static boolean isUnique(String s) {
     int n = s.length();
 
@@ -19,6 +28,14 @@ public class IsUnique {
 
     return true;
   }
+
+  /**
+   * The main function to test the isUnique function.
+   * It initializes a test string and prints out whether the string
+   * contains all unique characters.
+   *
+   * @param args command-line arguments (not used).
+   */
 
   public static void main(String[] args) {
     String s = "abCcdeXfghH";
