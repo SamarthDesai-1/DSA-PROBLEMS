@@ -1,7 +1,19 @@
 public class MinimumPositiveSubarraySum {
 
-  public static int minimumPositiveSubarray(int[] nums, int l, int r) {
+  /**
+   * Returns the minimum sum of a subarray of size between l and r from the given
+   * array
+   * that is positive. If no such subarray exists, returns -1.
+   *
+   * @param nums the given array
+   * @param l    the lower bound of the size of the subarray
+   * @param r    the upper bound of the size of the subarray
+   * 
+   * @return the minimum positive sum of a subarray of size between l and r, or -1
+   * 
+   */
 
+  public static int minimumPositiveSubarray(int[] nums, int l, int r) {
     int min = Integer.MAX_VALUE;
 
     for (int i = l; i <= r; i++) {
@@ -17,7 +29,7 @@ public class MinimumPositiveSubarraySum {
         while ((end - start + 1) == i) {
           if (sum > 0)
             minSum = Math.min(sum, minSum);
-            
+
           sum -= nums[start++];
         }
 
@@ -30,6 +42,12 @@ public class MinimumPositiveSubarraySum {
     return min == Integer.MAX_VALUE ? -1 : min;
   }
 
+  /**
+   * Unit test for the minimumPositiveSubarray method
+   * 
+   * @param args command line arguments
+   */
+  
   public static void main(String[] args) {
     int[] nums = { -2, 2, -3, 1 };
     int l = 2;

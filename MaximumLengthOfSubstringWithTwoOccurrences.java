@@ -10,32 +10,18 @@ public class MaximumLengthOfSubstringWithTwoOccurrences {
    *          be found.
    */
 
-  public static void maxLength(String s) {
+  public static int maxLength(String s) {
 
     int maxLength = Integer.MIN_VALUE;
     int start = 0;
     int end = 0;
     int[] count = new int[26];
 
-    @SuppressWarnings("unused")
-    int distinctCharacters = 0;
-
-    for (int i = 0; i < s.length(); i++) {
-      if (count[s.charAt(i) - 'a'] == 0)
-        distinctCharacters++;
-    }
-
     while (end < s.length()) {
-      if (count[s.charAt(end) - 'a'] == 0)
-        distinctCharacters--;
-
       count[s.charAt(end) - 'a']++;
 
       while (count[s.charAt(end) - 'a'] > 2) {
         count[s.charAt(start) - 'a']--;
-
-        if (count[s.charAt(start) - 'a'] == 0)
-          distinctCharacters++;
 
         start++;
       }
@@ -44,7 +30,7 @@ public class MaximumLengthOfSubstringWithTwoOccurrences {
       end++;
     }
 
-    System.out.println(maxLength);
+    return maxLength;
   }
 
   /**
@@ -59,7 +45,6 @@ public class MaximumLengthOfSubstringWithTwoOccurrences {
   public static void main(String[] args) {
     String s = "abcxyxxy";
 
-    maxLength(s);
+    System.out.println("Max length is : " + maxLength(s));
   }
-
 }

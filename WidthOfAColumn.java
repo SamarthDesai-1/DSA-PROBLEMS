@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class WidthOfAColumn {
 
   /**
@@ -41,10 +39,11 @@ public class WidthOfAColumn {
    * @return An ArrayList containing the width of each column.
    */
 
-  public static ArrayList<Integer> columnWidth(int[][] grid) {
+  public static int[] columnWidth(int[][] grid) {
     int row = grid.length;
     int col = grid[0].length;
-    ArrayList<Integer> list = new ArrayList<>();
+
+    int[] widths = new int[col];
 
     for (int i = 0; i < col; i++) {
       int max = Integer.MIN_VALUE;
@@ -52,10 +51,17 @@ public class WidthOfAColumn {
       for (int j = 0; j < row; j++)
         max = Math.max(max, countDigits(grid[j][i]));
 
-      list.add(max);
+      widths[i] = max;
     }
 
-    return list;
+    for (int i = 0; i < widths.length; i++) {
+
+      if (widths[i] == 0)
+        widths[i] = 1;
+    }
+
+
+    return widths;
   }
 
   /**
@@ -72,6 +78,7 @@ public class WidthOfAColumn {
         { -8556, -855, 25855 }
     };
 
-    System.out.println(columnWidth(grid));
+    for (int x : columnWidth(grid))
+      System.out.print(x + " ");
   }
 }
