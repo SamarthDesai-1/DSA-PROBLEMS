@@ -113,7 +113,6 @@ public class LongestPalindrome {
     int fromLower = longestPalindromeForLowerCase(s);
     int fromupper = longestPalindromeForUpperCase(s);
 
-    System.out.println("Longest palindrom length is : " + (fromLower +
-        fromupper));
+    System.out.println("Longest palindrom length is : " + (fromLower + fromupper));
   }
 }

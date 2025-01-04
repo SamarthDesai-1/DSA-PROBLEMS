@@ -29,10 +29,13 @@ public class CheckIfAllABeforeAllB {
     return true;
   }
 
+  /**
+   * Example usage of checkAllAandB() function.
+   */
+
   public static void main(String[] args) {
     String s = "aaa";
 
     System.out.println(checkAllAandB(s));
-
   }
 }
