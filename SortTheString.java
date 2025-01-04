@@ -12,15 +12,15 @@ public class SortTheString {
   public static String sort(String s) {
     StringBuilder sb = new StringBuilder();
 
-    int[] alphabets = new int[26];
+    int[] alphabets = new int[128];
 
     for (int i = 0; i < s.length(); i++)
-      alphabets[s.charAt(i) - 'a']++;
+      alphabets[s.charAt(i)]++;
 
     for (int i = 0; i < alphabets.length; i++) {
 
       while (alphabets[i] != 0) {
-        sb.append((char) (i + 'a'));
+        sb.append((char) (i));
 
         alphabets[i]--;
       }

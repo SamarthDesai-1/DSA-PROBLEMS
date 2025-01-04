@@ -3,10 +3,6 @@ import java.util.*;
 public class RomanToInteger {
 
   public static int toInteger(String s) {
-
-    int total = 0;
-    int n = s.length();
-
     HashMap<Character, Integer> map = new HashMap<>();
     map.put('I', 1);
     map.put('V', 5);
@@ -16,24 +12,31 @@ public class RomanToInteger {
     map.put('D', 500);
     map.put('M', 1000);
 
-    for (int i = 0; i < n; i++) {
-      
-      if (i < n - 1 && map.get(s.charAt(i)) < map.get(s.charAt(i + 1))) {
-        total -= map.get(s.charAt(i));
-      }
-      else total += map.get(s.charAt(i));
+    int index = 0;
+    int n = s.length() - 1;
+    int Integer = 0;
+
+    while (index < n) {
+
+      char currentChar = s.charAt(index);
+      char nextChar = s.charAt(index + 1);
+
+      if (map.get(currentChar) < map.get(nextChar))
+        Integer -= map.get(currentChar);
+      else
+        Integer += map.get(currentChar);
+
+      index++;
     }
 
-    return total;
+    Integer += map.get(s.charAt(index));
+
+    return Integer;
   }
 
   public static void main(String[] args) {
-    try (Scanner input = new Scanner(System.in)) {
+    String s = "LX";
 
-      System.out.print("Enter Roman Number : ");
-      String s = input.next();
-
-      System.out.println("ROMAN " + s + " to INTEGER is : " + toInteger(s));
-    }
-  } 
+    System.out.println("ROMAN " + s + " to INTEGER is : " + toInteger(s));
+  }
 }
