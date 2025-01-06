@@ -12,7 +12,6 @@ public class NumberOfSegmentsInAString {
   public static String countSegements(String s) {
 
     StringBuffer sb = new StringBuffer("");
-    s = s.trim();
     int n = s.length();
 
     for (int i = 0; i < n;) {
