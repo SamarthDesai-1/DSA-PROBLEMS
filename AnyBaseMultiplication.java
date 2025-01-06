@@ -80,6 +80,5 @@ public class AnyBaseMultiplication {
       long ans = getProduct(base, numOne, numTwo);
       System.out.println("Answer : " + ans);
     }
-  }
-  
+  } 
 }
