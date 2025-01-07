@@ -1,8 +1,6 @@
-This is just dummy file.
+public class dummy {
 
-
-
-
-
-
-System.out.println():
+  public static void main(String[] args) {
+    System.out.println("Dummy file");
+  }
+}
