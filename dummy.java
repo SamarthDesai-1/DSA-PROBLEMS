@@ -4,10 +4,5 @@ public class dummy {
     System.out.println("Dummy file");
 
 
-
-    int s = 365;
-
-
-
   }
 }
