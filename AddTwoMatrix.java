@@ -37,7 +37,6 @@ public class AddTwoMatrix {
     };
 
     for (int[] i : addMatrix(x, y)) {
-
       for (int j : i) {
         System.out.print(j + " ");
       }
