@@ -10,7 +10,7 @@ public class EvenAndOddNumbers {
   public static String oddEven(String n) {
     int lastDigit = (n.charAt(n.length() - 1) - '0') % 10;
 
-    return lastDigit % 2 == 0 ? "Even" : "Odd";
+    return lastDigit % 2 == 0 ? "Even Number" : "Odd Number";
   }
 
   /**
