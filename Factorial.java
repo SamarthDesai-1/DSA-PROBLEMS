@@ -41,7 +41,6 @@ public class Factorial {
     }
 
     StringBuffer sb = new StringBuffer("");
-    
     for (int i = 0; i < ans.size(); i++)
       sb.append(ans.get(i));
 
