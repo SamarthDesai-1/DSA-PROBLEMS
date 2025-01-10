@@ -18,7 +18,4 @@ public class ConcatenationOfArray {
     int[] nums = { 2, 4 };
     getConcatenation(nums);
   }
-
 }
-
-/** 1929 leetcode problem */
