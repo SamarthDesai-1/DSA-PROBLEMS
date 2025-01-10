@@ -26,6 +26,7 @@ public class MinimumPositiveSubarraySumOptimal {
 
       for (int i = size; i < n; i++) {
         sum += nums[i] - nums[i - size];
+        
         if (sum > 0)
           min = Math.min(min, sum);
       }
