@@ -97,6 +97,5 @@ public class RotateMatrixKTimes {
     rotateKtimes(matrix, k % 4);
 
     print(matrix);
-
   }
 }
