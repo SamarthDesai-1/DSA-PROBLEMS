@@ -28,6 +28,6 @@ public class LargestOddNumberInAString {
   public static void main(String[] args) {
     String num = "52";
 
-    System.out.println(largestOdd(num));
+    System.out.println("Largest ODD number in a string is : " + largestOdd(num));
   }
 }
