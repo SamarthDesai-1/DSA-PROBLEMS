@@ -40,7 +40,6 @@ public class SubstringOfThreeLengthDistinctCharactersOptimal {
   public static void main(String[] args) {
     String s = "npdrlvffzefb";
 
-    System.out
-        .println("Number of distinct substrings with length 3 in string " + s + " : " + subStringOfLengthThree(s));
+    System.out.println("Number of distinct substrings with length 3 in string " + s + " : " + subStringOfLengthThree(s));
   }
 }
