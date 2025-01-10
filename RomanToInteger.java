@@ -2,6 +2,20 @@ import java.util.*;
 
 public class RomanToInteger {
 
+  /**
+   * Converts a Roman numeral string to its integer representation.
+   *
+   * This method parses the input string representing a Roman numeral and
+   * calculates
+   * its corresponding integer value. It uses a predefined mapping of Roman
+   * numeral
+   * characters to their integer values and accounts for subtractive combinations
+   * where a smaller numeral precedes a larger one.
+   *
+   * @param s the Roman numeral string to be converted
+   * @return the integer value of the Roman numeral
+   */
+
   public static int toInteger(String s) {
     HashMap<Character, Integer> map = new HashMap<>();
     map.put('I', 1);
@@ -34,6 +48,13 @@ public class RomanToInteger {
     return Integer;
   }
 
+  /**
+   * Example main function to demonstrate the conversion of a Roman numeral to an
+   * integer
+   * 
+   * @param args Command line arguments
+   */
+  
   public static void main(String[] args) {
     String s = "LX";
 
