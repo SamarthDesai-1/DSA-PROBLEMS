@@ -1,5 +1,13 @@
 public class ThirdMaximumNumberOptimal {
 
+  /**
+   * Given an integer array nums, return the third maximum number in this array.
+   * If the array does not contain at least three distinct elements, return the
+   * maximum number.
+   * 
+   * @param nums the input array
+   * @return the third maximum number in the array
+   */
 
   public static int thirdMax(int[] nums) {
     int n = nums.length;
@@ -36,6 +44,13 @@ public class ThirdMaximumNumberOptimal {
 
     return third == null ? first : third;
   }
+
+  /**
+   * This is the main entry point for the program. It tests the thirdMax
+   * function with the following array: [1, 2, 2, 3]
+   * 
+   * @param args the command line arguments
+   */
 
   public static void main(String[] args) {
     int[] nums = { 1, 2, 2, 3 };
