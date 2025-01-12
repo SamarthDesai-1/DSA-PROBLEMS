@@ -11,20 +11,22 @@ public class AddingSpacesToAString {
 
   public static String insertSpaces(String s, int[] spaces) {
     StringBuffer sb = new StringBuffer();
+    int n = spaces.length;
 
-    if (spaces.length == 1) 
+    if (n == 1) 
       sb.append(s.substring(0, spaces[0])).append(" ");
-    
 
-    for (int i = 0; i < spaces.length - 1; i++) {
-      if (i == 0)
-        sb.append(s.substring(0, spaces[i])).append("_");
-        
+    int i = 0;
+    while (i < n - 1) {
+      if (i == 0) 
+        sb.append(s.substring(0, spaces[i])).append(" ");
 
-      sb.append(s.substring(spaces[i], spaces[i + 1])).append("_");
+      sb.append(s.substring(spaces[i], spaces[i + 1])).append(" ");
+
+      i++;
     }
 
-    sb.append(s.substring(spaces[spaces.length - 1]));
+    sb.append(s.substring(spaces[n- 1]));
 
     return sb.toString();
   }
@@ -39,6 +41,6 @@ public class AddingSpacesToAString {
     String s = "ezixkFLjdbxrDowLVGYvdtBrguAAJVM";
     int[] spaces = { 23 };
 
-    System.out.println(insertSpaces(s, spaces));
+    System.out.println("After adding spaces on specified indexes : " + insertSpaces(s, spaces));
   }
 }
