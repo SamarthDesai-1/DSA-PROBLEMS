@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class PowerOfKSizedSubarray {
 
@@ -26,7 +26,7 @@ public class PowerOfKSizedSubarray {
         boolean flag = true;
 
         for (int i = start; i < end; i++) {
-          if ((nums[i + 1] - nums[i]) == 1 && nums[i] < nums[i + 1]) {
+          if (nums[i + 1] - nums[i] == 1 && nums[i] < nums[i + 1]) {
             continue;
           } 
           else {
