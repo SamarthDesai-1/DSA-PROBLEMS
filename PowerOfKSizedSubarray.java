@@ -59,6 +59,7 @@ public class PowerOfKSizedSubarray {
     int[] nums = { 3, 2, 3, 2, 3, 2 };
     int k = 2;
 
+    System.out.print("Power of K-sized subarray is : ");
     System.out.println(powerOfK(nums, k));
   }
 }
