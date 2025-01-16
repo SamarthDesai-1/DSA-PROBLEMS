@@ -34,6 +34,11 @@ public class MinimumLengthOfStringAfterOperation {
     return minLength;
   }
 
+  /**
+   * A test driver for the minimumLength function.
+   *
+   * @param args command line arguments (not used)
+   */
   public static void main(String[] args) {
     String s = "aa";
 
