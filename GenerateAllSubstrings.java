@@ -19,9 +19,8 @@ public class GenerateAllSubstrings {
       for (int j = i; j < n; j++) {
 
         StringBuffer sb = new StringBuffer("");
-        for (int k = i; k <= j; k++) 
+        for (int k = i; k <= j; k++)
           sb.append(s.charAt(k));
-        
 
         list.add(sb.toString());
       }
@@ -31,10 +30,11 @@ public class GenerateAllSubstrings {
   }
 
   /**
-   * Main function to test above function. 
+   * Main function to test above function.
    *
    * @param args command line arguments
    */
+  
   public static void main(String[] args) {
     String s = "aba";
 
