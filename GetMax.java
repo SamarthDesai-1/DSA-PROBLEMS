@@ -1,11 +1,11 @@
 class Array {
 
-/**
- * Finds the maximum value in an integer array.
- *
- * @param nums the array of integers to be evaluated
- * @return the maximum integer value found in the array
- */
+  /**
+   * Finds the maximum value in an integer array.
+   *
+   * @param nums the array of integers to be evaluated
+   * @return the maximum integer value found in the array
+   */
 
   public int Max(int[] nums) {
     int max = Integer.MIN_VALUE;
@@ -51,7 +51,7 @@ public class GetMax {
    *
    * @param args unused
    */
-  
+
   public static void main(String[] args) {
     int[] nums = { 2, 8, 5, 6, 3, 2, 5, 70 };
 
