@@ -11,6 +11,7 @@ public class MinimumLengthOfStringAfterOperation {
    * @param s the input string
    * @return the minimum length of the string after the operation
    */
+  
   public static int minimumLength(String s) {
 
     int[] frequency = new int[26];
@@ -39,7 +40,7 @@ public class MinimumLengthOfStringAfterOperation {
    *
    * @param args command line arguments (not used)
    */
-  
+
   public static void main(String[] args) {
     String s = "aa";
 
