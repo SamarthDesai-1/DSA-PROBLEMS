@@ -1,5 +1,16 @@
 public class MinimumLengthOfStringAfterOperation {
 
+  /**
+   * Returns the minimum length of the string after the operation.
+   *
+   * This function takes a string and returns the minimum length of the string
+   * after the following operation is applied: for each character in the string,
+   * if the frequency of the character is even, remove two of it, else remove one
+   * of it.
+   *
+   * @param s the input string
+   * @return the minimum length of the string after the operation
+   */
   public static int minimumLength(String s) {
 
     int[] frequency = new int[26];
