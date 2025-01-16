@@ -20,7 +20,7 @@ public class AlternatingDigitSum {
    * @param n the number to compute the alternating digit sum of
    * @return the alternating digit sum of n
    */
-  
+
   public static int minimumOperations(int n) {
     int size = size(n);
 
@@ -48,6 +48,7 @@ public class AlternatingDigitSum {
    * The following example computes the alternating digit sum of the number
    * <code>886996</code>.
    */
+
   public static void main(String[] args) {
     int n = 886996;
 
