@@ -4,6 +4,7 @@ public class AlternatingDigitSum {
    * @param n the number to compute the size of
    * @return the number of digits in n
    */
+  
   public static int size(int n) {
     int size = 0;
 
