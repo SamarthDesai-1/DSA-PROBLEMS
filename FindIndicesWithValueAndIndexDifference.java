@@ -12,7 +12,7 @@ public class FindIndicesWithValueAndIndexDifference {
    *         -1}
    *         if no such pair of indices exists
    */
-  
+
   public static int[] diffs(int[] nums, int indexDiff, int valueDiff) {
 
     for (int i = 0; i < nums.length; i++) {
