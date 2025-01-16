@@ -16,6 +16,10 @@ public class AlternatingDigitSum {
     return size;
   }
 
+  /**
+   * @param n the number to compute the alternating digit sum of
+   * @return the alternating digit sum of n
+   */
   public static int minimumOperations(int n) {
     int size = size(n);
 
