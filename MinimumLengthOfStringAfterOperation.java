@@ -15,7 +15,7 @@ public class MinimumLengthOfStringAfterOperation {
 
     int[] frequency = new int[26];
 
-    for (int i = 0; i < s.length(); i++) 
+    for (int i = 0; i < s.length(); i++)
       frequency[s.charAt(i) - 'a']++;
 
     int minLength = 0;
@@ -39,6 +39,7 @@ public class MinimumLengthOfStringAfterOperation {
    *
    * @param args command line arguments (not used)
    */
+  
   public static void main(String[] args) {
     String s = "aa";
 
