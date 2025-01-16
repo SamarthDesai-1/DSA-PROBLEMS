@@ -30,6 +30,11 @@ public class GenerateAllSubstrings {
     return list;
   }
 
+  /**
+   * Main function to test above function. 
+   *
+   * @param args command line arguments
+   */
   public static void main(String[] args) {
     String s = "aba";
 
