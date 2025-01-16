@@ -51,6 +51,7 @@ public class GetMax {
    *
    * @param args unused
    */
+  
   public static void main(String[] args) {
     int[] nums = { 2, 8, 5, 6, 3, 2, 5, 70 };
 
