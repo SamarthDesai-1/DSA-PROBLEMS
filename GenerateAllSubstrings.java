@@ -19,7 +19,6 @@ public class GenerateAllSubstrings {
       for (int j = i; j < n; j++) {
 
         StringBuffer sb = new StringBuffer("");
-        
         for (int k = i; k <= j; k++) 
           sb.append(s.charAt(k));
         
