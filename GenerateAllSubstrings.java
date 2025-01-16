@@ -2,12 +2,12 @@ import java.util.ArrayList;
 
 public class GenerateAllSubstrings {
 
-/**
- * Generates all possible substrings of the input string `s`.
- *
- * @param s the input string from which substrings are generated
- * @return a list of all substrings of the given string
- */
+  /**
+   * Generates all possible substrings of the input string `s`.
+   *
+   * @param s the input string from which substrings are generated
+   * @return a list of all substrings of the given string
+   */
 
   public static ArrayList<String> allSubstringsVowels(String s) {
 
@@ -17,7 +17,7 @@ public class GenerateAllSubstrings {
     for (int i = 0; i < n; i++) {
 
       for (int j = i; j < n; j++) {
-        
+
         StringBuffer sb = new StringBuffer("");
         for (int k = i; k <= j; k++) {
           sb.append(s.charAt(k));
