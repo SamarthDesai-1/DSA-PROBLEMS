@@ -43,6 +43,10 @@ public class SortCharactersByFrequency {
     return sortedChars.toString();
   }
 
+  /**
+   * Unit test for sortByFrequency.
+   * @param args command line arguments (not used)
+   */
   public static void main(String[] args) {
     String s = "Aabb";
 
