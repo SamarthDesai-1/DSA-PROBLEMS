@@ -48,9 +48,9 @@ public class SortCharactersByFrequency {
    * 
    * @param args command line arguments (not used)
    */
-  
+
   public static void main(String[] args) {
-    String s = "Aabb";
+    String s = "mfrcuTGHIOPnuihurOIDHurif";
 
     System.out.println("Sorted characters by frequency : " + sortByFrequency(s));
   }
