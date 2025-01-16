@@ -1,5 +1,11 @@
 public class SortCharactersByFrequency {
 
+  /**
+   * Sort characters in a string by their frequency, in descending order of their count.
+   * If two characters have the same frequency, sort them in ascending order of their ASCII value.
+   * @param s the string to sort
+   * @return the sorted characters
+   */
   public static String sortByFrequency(String s) {
 
     int[] frequency = new int[128];
