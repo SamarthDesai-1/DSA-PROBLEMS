@@ -57,7 +57,7 @@ public class GetMax {
 
     Array foo = new Array();
 
-    System.out.println(foo.Max(nums));
-    System.out.println(foo.Min(nums));
+    System.out.println("Max from Array : " + foo.Max(nums));
+    System.out.println("Min from Array : " + foo.Min(nums));
   }
 }
