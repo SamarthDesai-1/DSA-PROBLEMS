@@ -1,0 +1,41 @@
+public class SortCharactersByFrequency {
+
+  public static String sortByFrequency(String s) {
+
+    int[] frequency = new int[128];
+    int n = frequency.length;
+
+    for (int i = 0; i < s.length(); i++) 
+      frequency[s.charAt(i)]++;
+
+    StringBuffer sortedChars = new StringBuffer("");
+    for (int i = 0; i < n; i++) {
+
+      int max = Integer.MIN_VALUE;
+      int index = -1;
+
+      for (int j = 0; j < n; j++) {
+        if (frequency[j] > max) {
+          max = frequency[j];
+          index = j;
+        }
+      }
+
+      int charFrequency = frequency[index];
+      while (charFrequency-- != 0) {
+        sortedChars.append((char) index);
+        
+      }
+
+      frequency[index] = 0;
+    }
+
+    return sortedChars.toString();
+  }
+  
+  public static void main(String[] args) {
+    String s = "Aabb";
+
+    System.out.println("Sorted characters by frequency : " + sortByFrequency(s));
+  }
+}
