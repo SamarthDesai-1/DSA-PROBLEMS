@@ -42,6 +42,15 @@ class Array {
 
 public class GetMax {
 
+  /**
+   * Test driver for Array class
+   *
+   * Demonstrates basic functionality of Array class
+   * by creating an instance and calling its Max and Min methods
+   * on a sample array.
+   *
+   * @param args unused
+   */
   public static void main(String[] args) {
     int[] nums = { 2, 8, 5, 6, 3, 2, 5, 70 };
 
