@@ -19,6 +19,13 @@ class Array {
     return max;
   }
 
+  /**
+   * Finds the minimum value in an integer array.
+   *
+   * @param nums the array of integers to be evaluated
+   * @return the minimum integer value found in the array
+   */
+
   public int Min(int[] nums) {
     int min = Integer.MAX_VALUE;
 
