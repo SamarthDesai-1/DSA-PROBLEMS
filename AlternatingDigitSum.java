@@ -28,11 +28,8 @@ public class AlternatingDigitSum {
 
     while (n > 0) {
       int lastDigit = n % 10;
-
       sum = sum + (size % 2 == 0 ? lastDigit * -1 : lastDigit);
-
       size--;
-
       n /= 10;
     }
 
