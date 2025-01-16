@@ -9,7 +9,7 @@ public class SortCharactersByFrequency {
    * @param s the string to sort
    * @return the sorted characters
    */
-  
+
   public static String sortByFrequency(String s) {
 
     int[] frequency = new int[128];
@@ -45,8 +45,10 @@ public class SortCharactersByFrequency {
 
   /**
    * Unit test for sortByFrequency.
+   * 
    * @param args command line arguments (not used)
    */
+  
   public static void main(String[] args) {
     String s = "Aabb";
 
